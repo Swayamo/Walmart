@@ -3,23 +3,23 @@
                        <div className="flex justify-between items-center mb-4">
                          <span className="text-lg font-semibold text-gray-900">Total: ${getSharedCartTotal().toFixed(2)}</span>
                          <div className="flex space-x-3">
-+                          <button 
-+                            onClick={() => navigate(`/products?roomId=${id}`)}
-+                            className="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors font-semibold"
-+                          >
-+                            Add More Items
-+                          </button>
+                          <button 
+                            onClick={() => navigate(`/products?roomId=${id}`)}
+                            className="bg-gradient-to-r from-gray-600 to-gray-700 text-white px-6 py-3 rounded-xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2"
+                          >
+                            <Package className="h-4 w-4" />
+                            <span>Add More Items</span>
+                          </button>
                            <button 
                              onClick={proceedToSplitCheckout}
--                            className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors font-semibold"
-+                            className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors font-semibold"
+                            className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-xl hover:from-green-700 hover:to-emerald-700 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2"
                            >
-                             Split Payment
+                            <Users className="h-4 w-4" />
+                            <span>Split Payment</span>
                            </button>
                            <button 
                              onClick={proceedToFullCheckout}
--                            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
-+                            className="bg-white text-blue-600 border-2 border-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors font-semibold"
+                            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-bold shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2"
                 <div className="mt-2 flex space-x-2">
                   <button
                     onClick={proceedToSplitCheckout}
@@ -35,7 +35,8 @@
                   </button>
                 </div>
                            >
-                             Full Checkout
+                            <CreditCard className="h-4 w-4" />
+                            <span>Full Checkout</span>
                            </button>
                          </div>
                        </div>
